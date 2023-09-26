@@ -5,9 +5,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "main", "DB_fix"]
+    branches: ["main", "DB_fix"]
   pull_request:
-    branches: [ "main", "DB_fix"]
+    branches: ["main", "DB_fix"]
     types: [opened, synchronize]
 
 permissions:
