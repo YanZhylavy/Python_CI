@@ -1,7 +1,7 @@
 from peewee import *
 import argparse
 
-# Define the database and the model
+
 db = SqliteDatabase('products.db')
 
 
@@ -23,7 +23,7 @@ class ProductModel(Model):
                 "price": self.price}
 
 
-# Create a new product
+
 def create_product(name, price):
     product = ProductModel(name=name, price=price)
     product.save()
